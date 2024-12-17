@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 80vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 100%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: darkyellow;
+  color: black;
+  cursor: pointer;
+  padding: 14px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+</style>
+<title>Family</title>
+<link rel="icon" type="image/x-icon" href="picture/favicon.ico">
+</head>
+<body background="picture/1.png">
+<br>
+<br>
+<br>
+
+<table width="86%" height="6%" cellspacing="5" cellpadding="9"  align="center">
+
+<tr align="center" valign="middle">
+<td bgcolor="orangered" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="index.html">HOME</font></td></a>
+
+<td  valign="middle" bgcolor="darkgreen" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="myself.html">MYSELF</font></td></a>
+
+<td bgcolor="DodgerBlue" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Family.html">FAMILY</font></td></a>
+
+<td bgcolor="SaddleBrown" width="10%" height="10%"><font size="5%"><font face="monospace"><font color="black">
+<a href="Friends.html">FRIEND</font></td></a>
+
+<td bgcolor="Brown" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="education.html">EDUCATION</font</td></a>
+
+<td bgcolor="Tomato" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Favourite.html">FAVOURITE</font</td></a>
+
+<td bgcolor="PaleVioletRed" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Gallery.html">Gallery</font></td></a>
+</tr>
+</table>
+<br>
+<br>
+<center><font face="Retno"><font color="Brown"><font size="15">MY FAMILY PICTURE</font>
+<br>
+<font size="5"><font face="monospace"><font color="black"><pre>Let me introduce my family, which is my mom, two older sisters, and my younger sister.Start with my mom; 
+her name is Norul Amla, and she is 56 years old. She now works as a teacher at SMK Seksyen 7, Shah Alam.
+
+Next, two older sisters start with the first; her name is Amni Adriana, and she is 28 years old, 
+and the second is Amni Atiqah, and she is 24 years old. Both of them know work, 
+but my first older sister has a boyfriend, and my second is still single.
+
+The last one is my younger sister. She is Amni Aqahsrina, and she is 17 years old.
+ She is still a student and will take SPM next year at SMK Seksyen 7, Shah Alam.
+ We don't have a lot of pictures together or individually, 
+but we have the best memory together that I cannot describe the feeling of.</pre></font>
+
+<div class="container">
+  <div class="box">
+    <img src="picture/11.png">
+    <span><font color="DarkGoldenrod">IMAGE 1</span></font>
+  </div>
+  <div class="box">
+    <img src="picture/12.png">
+    <span><font color="SteelBlue">IMAGE 2</span></font>
+
+  </div>
+  <div class="box">
+    <img src="picture/13.png">
+    <span><font color="DarkRed">IMAGE 3</span></font>
+
+  </div>
+  <div class="box">
+    <img src="picture/umi.png">
+    <span><font color="blue">IMAGE 4</span></font>
+
+  </div>
+</div>
+<br>
+<br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<footer>
+<font face="monospace"><font size="3"><div style="background-color:#FF8C00; color: black; text-align: center;  width="15&" height="10&"></font>
+    <font face="monospace"><font size="3"><p>&copy; 2024 AMNI WEBSITE. All rights reserved.</p></font> 
+  <font face="monospace"><font size="3"><p>contact me: 
+   <font face="monospace"><font size="3"><a href="#" style="color: black; text-decoration: none;">amyliaamni@gmail.com</a></font> |
+    <font face="monospace"><font size="3"><a href="https://www.instagram.com/inmaam._/profilecard/?igsh=dTdlMXMxdm16ZzY" style="color: black; text-decoration:none;">Instagram</a></font>
+</p>
+</div>
+</footer>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

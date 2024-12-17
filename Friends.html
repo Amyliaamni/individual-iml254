@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 50px; 
+justify-items: center;
+}
+
+.image-container {
+  position: relative;
+  width: 80%; 
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-container:hover .image {
+  opacity: 0.3;
+}
+
+.image-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: darkyellow;
+  color: black;
+  cursor: pointer;
+  padding: 14px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+</style>
+<title>Friend</title>
+<link rel="icon" type="image/x-icon" href="picture/favicon.ico">
+</head>
+<body background="picture/2.png">
+<br>
+<br>
+<br>
+
+<table width="86%" height="6%" cellspacing="5" cellpadding="9"  align="center">
+
+<tr align="center" valign="middle">
+<td bgcolor="orangered" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="index.html">HOME</font></td></a>
+
+<td  valign="middle" bgcolor="darkgreen" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="myself.html">MYSELF</font></td></a>
+
+<td bgcolor="DodgerBlue" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Family.html">FAMILY</font></td></a>
+
+<td bgcolor="SaddleBrown" width="10%" height="10%"><font size="5%"><font face="monospace"><font color="black">
+<a href="Friends.html">FRIEND</font></td></a>
+
+<td bgcolor="Brown" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="education.html">EDUCATION</font</td></a>
+
+<td bgcolor="Tomato" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Favourite.html">FAVOURITE</font</td></a>
+
+<td bgcolor="PaleVioletRed" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Gallery.html">Gallery</font></td></a>
+</tr>
+</table>
+<br>
+<br>
+<center><font face="Retno"><font size="15%"><font color="Brown">My Friend</font>
+<center><font face="monospace"><font size="6%"><font color="darkblue"><pre>Let me introduce you my friends, also known as my classmates, 
+who have been together since the first semester, which we will graduate together.
+Last picture is not my classmate 
+but she is my brass band club senior that has been teach me and my friends.</pre></font><center></p>
+<br>
+
+<div class="container">
+  <div class="image-container">
+    <img src="picture/putri.png" alt="Avatar" class="image">
+    <div class="middle">
+      <div class="text">Putri Nur Darlilah</div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <img src="picture/bat.png" alt="Avatar" class="image">
+    <div class="middle">
+      <div class="text">Nurin amira batrisya</div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <img src="picture/iqa.png" alt="Avatar" class="image">
+    <div class="middle">
+      <div class="text">Nur Syafiqa</div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <img src="picture/alisha.png" alt="Avatar" class="image">
+    <div class="middle">
+      <div class="text">Alisha Zafirah</div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <img src="picture/wawa.png" alt="Avatar" class="image">
+    <div class="middle">
+      <div class="text">Nur Najwa Syahirah</div>
+    </div>
+  </div>
+
+  <!-- Add more image containers if needed -->
+  <div class="image-container">
+    <img src="picture/shera.png" alt="Avatar" class="image">
+    <div class="middle">
+      <div class="text">Nurshahirah Najwa</div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <img src="picture/shasha.png" alt="Avatar" class="image">
+    <div class="middle">
+      <div class="text">Nurul Natasha</div>
+    </div>
+  </div>
+<div class="image-container">
+    <img src="picture/syasya.png" alt="Avatar" class="image">
+    <div class="middle">
+      <div class="text">Nor Amira Natasya</div>
+ </div>
+  </div>
+<div class="image-container">
+    <img src="picture/ayuni.png" alt="Avatar" class="image">
+    <div class="middle">
+      <div class="text">Najwa Ayuni</div>
+
+</div>
+</div>
+</div>
+<br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<footer>
+<center><font face="monospace"><font size="3"><div style="background-color:#FF8C00; color: black; text-align: center;  width="100&" height="10&"></font>
+    <font face="monospace"><font size="3"><p>&copy; 2024 AMNI WEBSITE. All rights reserved.</p></font> 
+  <font face="monospace"><font size="3"><p>contact me: 
+   <font face="monospace"><font size="3"><a href="#" style="color: black; text-decoration: none;">amyliaamni@gmail.com</a></font> |
+   <font face="monospace"><font size="3"><a href="https://www.instagram.com/inmaam._/profilecard/?igsh=dTdlMXMxdm16ZzY" style="color: black; text-decoration:none;">Instagram</a></font>
+  </p>
+</div>
+</footer>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

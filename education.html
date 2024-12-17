@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Education</title>
+    <link rel="icon" type="image/x-icon" href="picture/favicon.ico">
+    <style>
+
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+td a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+}
+
+        /* Flex container to align images side by side */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap; 
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .snip1482 {
+            font-family: 'Fauna One', Arial, sans-serif;
+            position: relative;
+            min-width: 400px;
+            max-width: 400px;
+            min-height: 250px;
+            width: 100%;
+            color: #CD5C5C;
+            text-align: right;
+            background-color: #1a1a1a;
+            line-height: 1.4em;
+            display: flex;
+            font-size: 15px;
+        }
+
+        .snip1482 * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.35s ease;
+            transition: all 0.35s ease;
+        }
+
+        .snip1482 img {
+            position: absolute;
+            right: 0%;
+            top: 50%;
+            opacity: 1;
+            width: 100%;
+            -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+        }
+
+        .snip1482 figcaption {
+            position: absolute;
+            width: 50%;
+            top: 50%;
+            left: 0;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            padding: 10px 0 10px 10px;
+        }
+
+        .snip1482 h2,
+        .snip1482 p {
+            margin: 0;
+            width: 90%;
+            -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+            opacity: 0;
+        }
+
+        .snip1482 h2 {
+            font-family: 'Playfair Display', Arial, sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .snip1482 p {
+            font-size: 0.8em;
+        }
+
+        .snip1482 a {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .snip1482:hover img,
+        .snip1482.hover img {
+            width: 55%;
+            right: -10%;
+        }
+
+        .snip1482:hover figcaption h2,
+        .snip1482.hover figcaption h2,
+        .snip1482:hover figcaption p,
+        .snip1482.hover figcaption p {
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            opacity: 1;
+        }
+
+* {
+  box-sizing: border-box;
+}
+
+  
+  width: 100%;
+  padding: 10px;
+  height: 355px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: darkyellow;
+  color: black;
+  cursor: pointer;
+  padding: 14px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+    </style>
+</head>
+<body background="picture/1.png">
+<br>
+<br>
+<table width="86%" height="6%" cellspacing="5" cellpadding="9"  align="center">
+
+<tr align="center" valign="middle">
+<td bgcolor="orangered" width="10%" height="20%"><font size="5%"><font face="monospace">
+<a href="index.html">HOME</font></td></a>
+
+<td  valign="middle" bgcolor="darkgreen" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="myself.html">MYSELF</font></td></a>
+
+<td bgcolor="DodgerBlue" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Family.html">FAMILY</font></td></a>
+
+<td bgcolor="SaddleBrown" width="10%" height="10%"><font size="5%"><font face="monospace"><font color="black">
+<a href="Friends.html">FRIEND</font></td></a>
+
+<td bgcolor="Brown" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="education.html">EDUCATION</font</td></a>
+
+<td bgcolor="Tomato" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Favourite.html">FAVOURITE</font</td></a>
+
+<td bgcolor="PaleVioletRed" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Gallery.html">Gallery</font></td></a>
+</tr>
+</table>
+<br>
+<br>
+    <center><font face="Retno" color="purple" size="10%">My School and University</font></center>
+
+    <br><br>
+
+       <div class="image-container">
+        <figure class="snip1482">
+            <figcaption>
+                <h2>Sekolah Menengah Seksyen 7</h2>
+                <p>This is my high school. Where my mom works and my younger sister studies.</p>
+            </figcaption>
+            <a href="#"></a>
+            <img src="picture/school.jpg" alt="Sekolah Menengah Seksyen 7" />
+        </figure>
+
+        <figure class="snip1482">
+            <figcaption>
+                <h2>Universiti Teknologi Mara Kedah</h2>
+                <p>This is my University. Where I continue my studies as a student in Informatic Library Course.</p>
+            </figcaption>
+            <a href="#"></a>
+            <img src="picture/kedah.jpg" alt="Universiti Teknologi Mara Kedah" />
+        </figure>
+    </div>
+<br>
+<br>
+<div class="row">
+  <div class="column" style="background:linear-gradient(to bottom, #33ccff 0%, #336699 0%)";>
+<center><pre><font face="monospace"><font size="6%"><font color="Darkorange"><pre>My student life has been an exciting journey that began in high school, 
+where I navigated through a wide range of academic challenges, 
+extracurricular activities, and social experiences,
+all of which helped me build a strong foundation for my future, 
+and continued into university, where I faced even more demanding coursework, 
+engaged in meaningful research projects, and formed lifelong friendships, 
+while constantly evolving both personally and professionally, 
+learning how to manage my time effectively, 
+work collaboratively with diverse groups of people, and adapt to various situations, 
+ultimately preparing me for the next chapter of my life.</pre></font></center>
+</div>
+<br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<footer>
+<font face="monospace"><font size="3"><div style="background-color:#FF8C00; color: black; text-align: center;  width="15&" height="10&"></font>
+    <font face="monospace"><font size="3"><p>&copy; 2024 AMNI WEBSITE. All rights reserved.</p></font> 
+  <font face="monospace"><font size="3"><p>contact me: 
+   <font face="monospace"><font size="3"><a href="#" style="color: black; text-decoration: none;">amyliaamni@gmail.com</a></font> |
+   <font face="monospace"><font size="3"><a href="https://www.instagram.com/inmaam._/profilecard/?igsh=dTdlMXMxdm16ZzY" style="color: black; text-decoration:none;">Instagram</a></font>
+  </p>
+</div>
+</footer>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

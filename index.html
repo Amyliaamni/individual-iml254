@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #00008B;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+    .header {
+      padding: 165px;
+      text-align: center;
+      background-image: url(picture/banner.png) ;
+      background-size: cover; 
+      background-position: center;  
+      color:#9085BC;
+      font-size: 30px;
+    }
+
+   
+    .content {
+      padding: 20px;
+    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: darkyellow;
+  color: black;
+  cursor: pointer;
+  padding: 14px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+</style>
+
+<title>Home</title>
+<link rel="icon" type="image/x-icon" href="picture/amni.ico">
+
+</head>
+<body background="picture/1.png">
+<div class="header">
+<h1></h1>
+    <p></p>
+</div>
+<br>
+<br>
+<table width="86%" height="86%" cellspacing="5" cellpadding="9"  align="center">
+
+<tr align="center" valign="middle">
+<td bgcolor="orangered" width="10%" height="20%"><font size="5%"><font face="monospace">
+<a href="index.html">HOME</font></td></a>
+
+<td  valign="middle" bgcolor="darkgreen" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="myself.html">MYSELF</font></td></a>
+
+<td bgcolor="DodgerBlue" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Family.html">FAMILY</font></td></a>
+
+<td bgcolor="SaddleBrown" width="10%" height="10%"><font size="5%"><font face="monospace"><font color="black">
+<a href="Friends.html">FRIEND</font></td></a>
+
+<td bgcolor="Brown" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="education.html">EDUCATION</font</td></a>
+
+<td bgcolor="Tomato" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Favourite.html">FAVOURITE</font</td></a>
+
+<td bgcolor="PaleVioletRed" width="10%" height="10%"><font size="5%"><font face="monospace">
+<a href="Gallery.html">Gallery</font></td></a>
+</tr>
+</table>
+<br>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+  </div>
+
+<br>
+<br>
+<center><iframe width="800" height="400" src="https://www.youtube.com/embed/CrjWyD-HHIM?si=lrP8E5iWCYw9GJUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+<br>
+<br>
+<center><font face="monospace"><font size="6%"><font color="white"><blockquote>Hello! and again welcome to my website before you explore about me. I have a message for you.</blockquote></font></center>
+
+<center><font face="courier"><font size="6%"><font color="black"><pre>"I know today will not be the easiest day you have had,
+but your mental strength is one of your best qualities. 
+No matter what happens,your family still loves and cares about you.
+We always will."</pre></font><center></p>
+<br>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="https://www.google.com/">Google</a>
+  <a href="https://www.youtube.com/">Youtube</a>
+  <a href="https://x.com/?logout=1734373803318">Twitter</a>
+  <a href="https://www.instagram.com/inmaam._/profilecard/?igsh=dTdlMXMxdm16ZzY">Instagram</a>
+</div>
+
+<br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<br>
+<footer>
+<font face="monospace"><font size="3"><div style="background-color:#FF8C00; color: black; text-align: center;  width="15&" height="10&"></font>
+    <font face="monospace"><font size="3"><p>&copy; 2024 AMNI WEBSITE. All rights reserved.</p></font> 
+  <font face="monospace"><font size="3"><p>contact me: 
+   <font face="monospace"><font size="3"><a href="#" style="color: black; text-decoration: none;">amyliaamni@gmail.com</a></font> |
+    </p>
+</div>
+</footer>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+ let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
